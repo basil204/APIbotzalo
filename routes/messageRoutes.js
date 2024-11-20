@@ -29,6 +29,34 @@ router.post("/sendmessage", async (req, res) => {
     res.status(500).json({ error: "Đã xảy ra lỗi khi gửi tin nhắn" });
   }
 });
+router.get("/customerinfo", async (req, res) => {
+  const { phone } = req.query;
+
+  if (!phone) {
+    return res
+        .status(400)
+        .json({ error: "Vui lòng cung cấp số điện thoại." });
+  }
+
+  try {
+    const api = await loginToZalo();
+    const user = await findUser(api, phone);
+
+    if (user && user.uid) {
+      res.status(200).json({
+        message: "Thông tin khách hàng được tìm thấy.",
+        user,
+      });
+    } else {
+      res.status(404).json({ error: "Không tìm thấy thông tin khách hàng." });
+    }
+  } catch (error) {
+    res.status(500).json({
+      message: "Đã xảy ra lỗi khi lấy thông tin khách hàng.",
+      error: error.message,
+    });
+  }
+});
 
 // API để lưu hình ảnh và gửi tin nhắn với hình ảnh
 router.post("/saveimg", async (req, res) => {
@@ -73,5 +101,6 @@ router.post("/saveimg", async (req, res) => {
     });
   }
 });
+// API để lấy thông tin khách hàng
 
 module.exports = router;
