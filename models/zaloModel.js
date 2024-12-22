@@ -3,10 +3,10 @@ const { Zalo, MessageType } = require("zca-js");
 
 const zaloConfig = {
   cookie:
-    "_ga=GA1.2.629126569.1732096434; _gid=GA1.2.76076698.1732096434; _ga_RYD7END4JE=GS1.2.1732096434.1.1.1732096435.59.0.0; _zlang=vn; zpsid=FnWO.420139826.4.j8HE_8DetYAnkzGxZsZU8lORh1QnMEyHkb3i58tERS_Xpaw8WkLi7-HetY8; zpw_sek=mjCo.420139826.a0.G2jLluA6tz2mLTN9euRVqFcakhkWlFsLuRAbvEdWkEctu8QIwhQdXVZNwhRbk-Bo_uXvOs_aUK0eXr1Yl-7Vq0; __zi=3000.SSZzejyD2un_sgFndLmBcMZNvQk6KGJPFC3lvuG56fSosAoxbWzKspRQuVQH15pOCv_eyvLENzivc-dqC3ap.1; __zi-legacy=3000.SSZzejyD2un_sgFndLmBcMZNvQk6KGJPFC3lvuG56fSosAoxbWzKspRQuVQH15pOCv_eyvLENzivc-dqC3ap.1; app.event.zalo.me=1076949210766233979",
-  imei: "8de1bcf9-d29b-4056-8f56-fbd71ef4cae8-f51bb482c660d0eeadd1f058058a2b35",
+      "_ga=GA1.2.1948762887.1733822261; _gid=GA1.2.795699911.1734577882; _ga_RYD7END4JE=GS1.2.1734577882.2.1.1734577925.17.0.0; _zlang=vn; zpsid=fiVP.420139826.5.GoFSc-fFjmNOdBqSva-t1PyynJ7OVuOsqtU5CvugfrE8wIUlwrCuPerFjmK; zpw_sek=zZZ5.420139826.a0.BpmytqCw7cnnwHHrOZeUR3WOUmTX03mhENXAGtfjM0vtRqOe4bLpD2LeK2uq1oDEFavxV1LOkFpfEm3Z85qUR0; __zi=3000.SSZzejyD6zOgdh2mtnLQWYQN_RAG01ICFjIXe9fEM8WycUodaKPRZNcGwQBUJrwCU9_fgJWp.1; __zi-legacy=3000.SSZzejyD6zOgdh2mtnLQWYQN_RAG01ICFjIXe9fEM8WycUodaKPRZNcGwQBUJrwCU9_fgJWp.1; ozi=2000.SSZzejyD6zOgdh2mtnLQWYQN_RAG01ICFjMXe9fFM8yxdUMWbazJY32TggMJIHo1DPohgfD25eK.1; app.event.zalo.me=1076949210766233979",
+  imei: "c36f2211-19b7-4898-acfb-1a4477cff2cb-f51bb482c660d0eeadd1f058058a2b35",
   userAgent:
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
 };
 
 const zaloOptions = {
